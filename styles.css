@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f7f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #8b4513;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #d4a574 0%, #8b4513 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.featured-products h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #8b4513;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product {
+    background-color: #f9f7f4;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product h3 {
+    color: #8b4513;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product .price {
+    font-size: 1.3em;
+    color: #d4a574;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product p {
+    color: #666;
+}
+
+/* Order Section */
+.order-section {
+    background-color: #d4a574;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.order-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Shipping Section */
+.shipping-section {
+    background-color: #f9f7f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.shipping-section h2 {
+    color: #8b4513;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #8b4513;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.contact-info a {
+    color: #8b4513;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #d4a574;
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8b4513;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #d4a574;
+}
+
+/* Footer */
+footer {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
